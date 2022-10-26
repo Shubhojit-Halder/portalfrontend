@@ -1,33 +1,14 @@
 import React from "react";
 import { LandingPageWrapper } from "../CSS/Landing.styled";
-import bgImg from "../Static/landing.jpg";
+import bgImg from "../Static/landing1.jpg";
 import backPNG from "../Static/back.png";
-import Typed from "react-typed";
 import { useNavigate } from "react-router-dom";
+import Nav from "./Nav";
 const Landing = () => {
   const navigate = useNavigate();
   return (
     <LandingPageWrapper bgImg={bgImg} backPNG={backPNG}>
-      <ul className="navlist">
-        <li
-          className="box_nav"
-          onClick={() => {
-            navigate("/events");
-          }}
-        >
-          Events
-        </li>
-        <li className="club-name">
-          {" "}
-          <Typed
-            strings={["Megatronix"]}
-            typeSpeed={100}
-            showCursor={false}
-          />{" "}
-        </li>
-        <li className="box_nav">Registration</li>
-        {/* <li>Events</li> */}
-      </ul>
+      <Nav first={"Events"} main={"Megatronix"} third={"Registration"}/>
       {/* <div className="club-name"> */}
       {/* <Typed strings={["Megatronix"]} typeSpeed={50} backSpeed={50} loop/> */}
       {/* Megatronix

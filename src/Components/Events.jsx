@@ -4,17 +4,19 @@ import backPNG from "../Static/back.png";
 import TrendingFlatRoundedIcon from "@mui/icons-material/TrendingFlatRounded";
 import Button from "@mui/material/Button";
 import { CardData } from "../Static/cardData";
-import bg from "../Static/bg2.png";
+import bg from "../Static/landing1.jpg";
 import Background from "./Background";
+import Nav from "./Nav";
 
 const Events = () => {
   return (
     <EventPageWrapper backImg={bg} back={backPNG}>
       <Background />
+      <Nav first={"Home"} main={"Events"} third={"Registration"}/>
       <div className="content">
-        <div className="events">
+        {/* <div className="events">
           <p>TechXtraa</p>
-        </div>
+        </div> */}
         <div className="allcards">
           {CardData.map((data, index) => {
             return (

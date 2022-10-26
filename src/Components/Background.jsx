@@ -44,11 +44,11 @@ const Background = () => {
               },
               modes: {
                 push: {
-                  quantity: 4,
+                  quantity: 1,
                 },
                 repulse: {
                   distance: 100,
-                  duration: 0.4,
+                  duration: 0.5,
                 },
               },
             },
@@ -73,13 +73,13 @@ const Background = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 3,
-                straight: true,
+                speed: 2,
+                straight: false,
               },
               number: {
                 density: {
                   enable: true,
-                  area: 800,
+                  area: 1000,
                 },
                 value: 80,
               },

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EventPageWrapper = styled.section`
   background: url(${(props) => props.backImg});
   padding-bottom: 20px;
-  background: black;
+  /* background: black; */
   background-position: center;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
@@ -60,8 +60,9 @@ export const EventPageWrapper = styled.section`
     margin-top: -10px;
   }
   .domainName {
-    color: white;
+    color: #fff;
     font-size: 1.7rem;
+    z-index: 15;
     margin-top: -22px;
     font-family: "Jost";
   }
